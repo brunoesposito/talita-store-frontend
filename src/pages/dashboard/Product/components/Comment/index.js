@@ -69,7 +69,7 @@ function Comment({ id }) {
                     </>
                 ))
             ) : (
-                <p className="empty_comment">Sem comentários</p>
+                admin === 1 || admin === '1' ? <p className="empty_comment">Sem comentários</p> : null
             )}
         </BoxComment>
     );

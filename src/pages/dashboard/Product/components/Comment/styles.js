@@ -4,11 +4,14 @@ export const BoxComment = styled.div`
     position: relative;
     background-color: #FC6963;
     padding: 20px;
-    transform: translateY(-90%);
-    transition: 0.5s;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     z-index: 1;
+
+    @media(min-width: 600px){
+        transform: translateY(-90%);
+        transition: 0.5s;
+    }
 
     textarea {
         width: 100%;

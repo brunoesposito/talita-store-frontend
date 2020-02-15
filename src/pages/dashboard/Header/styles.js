@@ -7,7 +7,11 @@ export const BoxHeader = styled.div`
     margin-bottom: 30px;
 
     img {
-        width: 150px;
+        width: 100px;
+
+        @media(min-width: 600px){
+            width: 150px;
+        }
     }
     span {
         font-size: 14px;

@@ -2,9 +2,14 @@ import styled from 'styled-components';
 
 export const ButtonModal = styled.div`
     position: fixed;
-    bottom: 25px;
+    top: 90%;
     right: 25px;
     z-index: 999;
+
+    @media(min-width: 600px){
+        top: inherit;
+        bottom: 25px;
+    }
 
     button {
         margin-left: 10px;
@@ -29,7 +34,7 @@ export const BoxModal = styled.div`
     left: 50%;
     top: 50%;
     background: #fff;
-    width: 90%;
+    width: 80%;
     max-width: ${props => props.setWidth || '600px'};
     transform: translate(-50%, -50%);
     outline: none;

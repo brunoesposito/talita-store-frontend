@@ -19,7 +19,7 @@ function Actions({ id }) {
 
     const getAndShowLike = async (id) => {
         const { data } = await api.get(`/like/${id}`);
-
+        
         if( data.length ){
             if( data[0].is_like > 0 ){
                 setLike(true)

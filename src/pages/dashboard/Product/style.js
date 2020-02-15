@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const Product = styled.div`
     
-    &:hover {
+    @media(min-width: 600px){
+        &:hover {
 
-        .comment,
-        .boxProduct {
-            transform: translateY(0);
-        }
-        .boxProduct {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
+            .comment,
+            .boxProduct {
+                transform: translateY(0);
+            }
+            .boxProduct {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
         }
     }
     .boxProduct {
@@ -20,19 +22,28 @@ export const Product = styled.div`
         border-radius: 5px;
         padding: 20px;
         text-align: center;
-        transform: translateY(10%);
-        transition: 0.5s;
         z-index: 2;
+
+        @media(min-width: 600px){
+            transform: translateY(10%);
+            transition: 0.5s;
+        }
 
         img {
             max-width: 100%;
-            height: 250px;
             margin: 0 auto 20px;
             overflow: hidden;
+
+            @media(min-width: 600px){
+                height: 250px;
+            }
         }
         p {
-            min-height: 50px;
             display: block;
+
+            @media(min-width: 600px){
+                min-height: 50px;
+            }
         }
         .box_price {
 
