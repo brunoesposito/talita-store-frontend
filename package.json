@@ -25,7 +25,7 @@
     "eject": "react-scripts eject"
   },
   "resolutions": {
-    "serialize-javascript": "^2.1.1"
+    "serialize-javascript": "^3.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
